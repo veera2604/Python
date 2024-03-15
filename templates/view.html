@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+{% for i in Employee %}
+    <h1>EMP_Id: {{ i.emp_id }}</h1>
+    <h1>NAME: {{ i.name }}</h1>
+    <h1>AGE: {{ i.age }}</h1>
+    <h1>Position: {{ i.position }}</h1>
+    <hr>
+{% endfor %}
+
+</body>
+</html>
