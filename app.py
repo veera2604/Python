@@ -1,7 +1,8 @@
 from flask import Flask,render_template,request,redirect
 
 from models import db,Emp
-
+import random
+import date
 app=Flask(__name__)
 
 app.config["SQLALCHEMY_DATABASE_URI"]='sqlite:///data.db'
